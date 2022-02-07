@@ -1,0 +1,18 @@
+important functions:
+map:
+map :: (a -> b) -> [a] -> [b]
+map _ []     = []
+map f (x:xs) = f x : map f xs
+
+
+fold:
+foldr f z []     = z 
+foldr f z (x:xs) = f x (foldr f z xs) 
+
+foldl f z []     = z                  
+foldl f z (x:xs) = foldl f (f z x) xs
+
+iterate
+last
+tail
+

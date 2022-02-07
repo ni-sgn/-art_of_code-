@@ -1,0 +1,16 @@
+/media/penguin/Trash_Compactor/Nikas_Junk/DBase/Code/C#/bin/Debug/net5.0/C#
+/media/penguin/Trash_Compactor/Nikas_Junk/DBase/Code/C#/bin/Debug/net5.0/C#.deps.json
+/media/penguin/Trash_Compactor/Nikas_Junk/DBase/Code/C#/bin/Debug/net5.0/C#.runtimeconfig.json
+/media/penguin/Trash_Compactor/Nikas_Junk/DBase/Code/C#/bin/Debug/net5.0/C#.runtimeconfig.dev.json
+/media/penguin/Trash_Compactor/Nikas_Junk/DBase/Code/C#/bin/Debug/net5.0/C#.dll
+/media/penguin/Trash_Compactor/Nikas_Junk/DBase/Code/C#/bin/Debug/net5.0/ref/C#.dll
+/media/penguin/Trash_Compactor/Nikas_Junk/DBase/Code/C#/bin/Debug/net5.0/C#.pdb
+/media/penguin/Trash_Compactor/Nikas_Junk/DBase/Code/C#/obj/Debug/net5.0/C#.csproj.AssemblyReference.cache
+/media/penguin/Trash_Compactor/Nikas_Junk/DBase/Code/C#/obj/Debug/net5.0/C#.GeneratedMSBuildEditorConfig.editorconfig
+/media/penguin/Trash_Compactor/Nikas_Junk/DBase/Code/C#/obj/Debug/net5.0/C#.AssemblyInfoInputs.cache
+/media/penguin/Trash_Compactor/Nikas_Junk/DBase/Code/C#/obj/Debug/net5.0/C#.AssemblyInfo.cs
+/media/penguin/Trash_Compactor/Nikas_Junk/DBase/Code/C#/obj/Debug/net5.0/C#.csproj.CoreCompileInputs.cache
+/media/penguin/Trash_Compactor/Nikas_Junk/DBase/Code/C#/obj/Debug/net5.0/C#.dll
+/media/penguin/Trash_Compactor/Nikas_Junk/DBase/Code/C#/obj/Debug/net5.0/ref/C#.dll
+/media/penguin/Trash_Compactor/Nikas_Junk/DBase/Code/C#/obj/Debug/net5.0/C#.pdb
+/media/penguin/Trash_Compactor/Nikas_Junk/DBase/Code/C#/obj/Debug/net5.0/C#.genruntimeconfig.cache

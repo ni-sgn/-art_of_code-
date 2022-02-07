@@ -1,0 +1,60 @@
+fmap id	=	id
+fmap (f . g)	=	fmap f . fmap g
+
+infixl 1  >>, >>=
+class  Monad m  where
+    (>>=)            :: m a -> (a -> m b) -> m b
+    (>>)             :: m a -> m b -> m b
+    return           :: a -> m a
+    fail             :: String -> m a
+
+    m >> k           =  m >>= \_ -> k
+
+-- Then bind is fish where first function of the composition
+-- is already applied.
+-- (>>=) :: Monad m => m b -> (b -> m c) -> m c 
+-- (>=>) :: Monad m => (a -> m b) -> (b -> m c) -> (a -> m c) 
+
+
+-- functors are just and nothing, therefore on those
+-- contextual typed values like Nothing, Just 1, Just 2, ...,
+-- non-contextual(non-algebraic, primitive) types can be applied with 
+-- fmap
+-- fmap :: Functor f => (a -> b) -> f a -> f b
+-- f here is a wrapper, like just and nothing(or maybe as maybe,
+-- because Maybe can be used as a Functor and also as a Monad)
+-- therefore we have a function(morphism) which are on flat types
+-- and fmap provides a way to apply this function on lifted type of
+-- values
+
+-- Functor follow the next typeclass
+class Functor f where
+	fmap :: (a -> b) -> f a -> f b
+-- <$> is infix for fmap
+
+-- functions are Functors too 
+instance Functor ((->) r) where
+	fmap f g = f . g
+
+-- functions themselves might be wrapped inside a context
+-- then we need applicatives
+-- liftA or <*>
+(<*>) :: Applicative f => f (a -> b) -> f a -> f b
+
+-- we have to get to the Monad level to be able to perform composition
+-- with the bind (>>= or liftM) operation
+
+class Monam m where
+	(>>=) :: m a -> (a -> m b) -> m b
+
+instance Monad Maybe where
+	Nothing >>= func = Nothing
+	Just val >>= func = func val
+
+-- To chain IO actions, >> operator is needed
+(>>) :: Monad m => m a -> m b -> m b
+
+-- Just is a data contrusctor, while Maybe is a type constructor
+
+
+
